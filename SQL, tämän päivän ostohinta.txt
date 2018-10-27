@@ -1,0 +1,14 @@
+CREATE TABLE ostoslista(
+tuote int,
+toimittajatuotekoodi varchar,
+toimittajatuote int,
+koodi varchar,
+Ostohinta numeric,
+ shift_name VARCHAR NOT NULL,
+    start_at TIME NOT NULL,
+    end_at TIME NOT NULL
+);
+INSERT INTO ostoslista (shift_name, start_at, end_at)
+VALUES('Aamu', '08:00:00', '12:00:00'),
+      ('Iltapäivällä', '13:00:00', '17:00:00'),
+      ('Yö', '18:00:00', '24:00:00');
